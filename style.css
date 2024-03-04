@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+:root{
+    --color-white: #eeecec;
+    --color-orange: #ffb301;
+}
+form{
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: 3px;
+}
+input{
+    outline: none;
+    padding: .8rem 1.3rem;
+    width: 350px;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    font-weight: bold;}
+button{
+    padding: .8rem 1.3rem;
+    background-color: var(--color-orange);
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: 3px;
+}
+.container h1{
+    text-align: center;
+    color: #999696;
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: .7rem;
+    border-radius: 3px;
+    margin: 1REM 0;
+}
+.task p{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.task button:nth-child(1){
+    padding: .5rem 1rem;
+    background-color: var(--color-orange);
+}
+.task button:nth-child(2){
+    padding: .5rem 1rem;
+    background-color: #ff8c00;
+}
+/* < =================== Breckpoints ================== > */
+/* --- Xsmall device --- */
+@media screen and (width <= 576px) {
+    html{
+        font-size: 12px;
+    }
+    form,.container{
+        width: 90%;
+    }
+    input{
+        width: 200px;
+        padding: .5rem 1rem;
+    }
+    button{
+        padding: .5rem 1rem;
+    }
+    .task button{
+        font-size: .8rem;
+    }
+    .task p{
+        font-size: 1rem;
+    }
+}
+/* --- small device --- */
+@media screen and ( 577px <= width <= 768px) {
+    form,.container{
+        width: 80%;
+    }
+    input{
+        width: 300px;
+        padding: .7rem 1.2rem;
+    }
+    button{
+        padding: .7rem 1.2rem;
+    }
+    .task button{
+        padding: .2rem .7rem;
+    }
+}
+/* --- meduim device --- */
+@media screen and ( 769px <= width <= 991px) {
+    form,.container{
+        width: 70%;
+    }
+}
